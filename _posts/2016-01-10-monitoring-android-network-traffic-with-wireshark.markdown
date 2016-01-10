@@ -1,9 +1,9 @@
 ---
+comments: true
 layout: post
 title:  "Monitoring Android Network Traffic"
 date:   2016-01-10
 categories: android wireshark
-comments: true
 ---
 *MacBook Air running Yosemite*  
 *Nexus 5X running 6.0.1*  
