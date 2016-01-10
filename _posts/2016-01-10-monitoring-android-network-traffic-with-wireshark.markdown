@@ -17,6 +17,7 @@ I'm sure this can be generalized - the gist is that you want to use your compute
 
 #Step 2: Using Wireshark
 [Download Wireshark](https://www.wireshark.org/download.html)  
+
 Can we stop and appreciate the new version of Wireshark for Mac OS X? Look at those nifty little graphs next to each capture interface. Hopefully Wi-Fi: en0 looks active at this point. Double-click to start capturing packets. Okay now there may or may not be a seemingly endless stream of TCP/UDP network packets. Let's ignore those. Wireshark is incredibly powerful but all we care about is finding out our mobile device IP so that we can begin to filter out unecessary data from the stream. Add `http` to the filter bar and press enter. It sort of looks like a browser address bar if for some reason you don't know what I'm talking about. Great, now if you're familar with web this probably looks a lot more familiar, classic GET requests, nice.  
 
 Now add `http.contains github` to the filter bar and open `http://jackar.github.io` on your mobile device. Voila, you should see a GET request in your feed. Double-click to view the packet and verify the host `jackar.github.io` and make sure to note the source IP.
